@@ -1,6 +1,12 @@
 import React from 'react';
 
-export class App extends React.Component {
+interface AppType {}
+
+interface AppState {
+  lastKey: string | null;
+}
+
+export class App extends React.Component<AppType, AppState> {
   state = {
     lastKey: null,
   };
